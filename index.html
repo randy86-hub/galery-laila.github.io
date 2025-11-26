@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-widht, intial-scale=1.0">
+        <title>laila Web</title>
+        <link rel="stylesheet" href="lailaweb.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>galery laila</h1>
+            <p>💫 </p>
+        </header>
+
+        <div class="filter-buttons">
+            <button oneclick="showcategory('home')">home</button>
+            <button oneclick="showcategory ('pantai')">pantai</button>
+            <button oneclick="showcategory ('mygalery')">my galery</button>
+        </div>
+        
+        <div class="galery-section" id="home">
+            <div class="category-title"></div>
+            <div class="pov">
+            saat pertama kali aku melihatmu hatiku mulai berdegup kecang.
+
+            melihat paras keindahan mu dan kecantikan mu
+            </div>
+
+           <div class="photo-grid">
+            <img src="laila.jpg" alt="laila">
+            <img src="laila2.jpg" alt="laila2">
+            <img src="laila3.jpg" alt="laila3"> 
+            <img src="laila4.jpg" alt="laila4">
+            <img src="laila5.jpg" alt="laila5">
+           </div> 
+        </div>
+        
+        <footer>
+    <p>&copy; 2025 GALERI laila 💫</p>
+  </footer>
+
+  <script>
+    function showCategory(id) {
+      document.querySelectorAll('.gallery-section').forEach(section => {
+        section.style.display = 'none';
+      });
+      document.getElementById(id).style.display = 'block';
+    }
+
+    // Tampilkan semua kategori saat pertama kali
+    document.querySelectorAll('.gallery-section').forEach(section => {
+      section.style.display = 'block';
+    });
+  </script>
+    </body>
+</html>
